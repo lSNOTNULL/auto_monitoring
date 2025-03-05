@@ -3,7 +3,7 @@ name: 자동 모니터링
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 */1 * * *"  # 매 1시간마다 실행 (보장 안됨)
+        - cron: "0 */24 * * *"  # 매 24시간마다 실행 (보장 안됨)
 
 jobs:
     make-file:
